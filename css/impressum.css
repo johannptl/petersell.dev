@@ -1,0 +1,194 @@
+/*-FONT----------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
+/*-MAIN----------------------------------------------------*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: url(../img/landing.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+p, h1, a, li {
+    color:#c9d1d9;
+    font-size: 20px;
+}
+
+/*-Header----------------------------------------------------*/
+
+Header {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: none;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    width: 80px;
+    float: left;
+    margin: 10px 0 0 50px;
+}
+
+#logo:hover {
+    opacity: 0.5;
+}
+
+#logo img {
+    width: 150%;
+    border-radius: 10px;
+    }
+
+header nav {
+    float: right;
+    margin: 10px 50px 0 0;
+    display: inline-block;
+    font-size: 20px
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 25px;
+}
+
+.hover:hover {
+    padding-top: 5px;
+}
+
+header nav ul li ul {
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+#logo, li, img, header nav ul ul a {
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+/*-Impressum----------------------------------------------------*/
+
+.impressum {
+    border: 3px solid #30363d;
+    border-radius: 30px;
+    position: relative;
+    width: 500px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0d1117;
+}
+
+.p {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+.h1 {
+    border-bottom: 3px solid #30363d;
+    margin-left: -30px;
+}
+
+/*-Footer----------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #3f3f3f;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 12px;
+    color: #f0f0f0;
+    padding-top: 21px;
+    margin-top: 0;
+    text-transform: none;
+    text-align: center;
+}
+
+.left {
+    float: left;
+    margin-left: 200px;
+}
+
+.right {
+    float: right;
+    margin-right: 200px;
+}
+
+/*-Menu----------------------------------------------------*/
+
+#context-menu {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 10000;
+    width: 150px;
+    background: #1b1a1a;
+    border-radius: 5px;
+    text-align: left;
+}
+  
+  #context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #eee;
+    cursor: pointer;
+    border-radius: inherit;
+}
+  
+  #context-menu .item:hover {
+    background: #343434;
+    border-radius: 5px;
+}
+  
+  #debug:hover {
+    background: #1b1a1a;
+}
+  
+  #context-menu {
+    position: fixed;
+    z-index: 10000;
+    width: 150px;
+    background: #1b1a1a;
+    border-radius: 5px;
+    display: none;
+}
+  
+  #context-menu.visible {
+    display: block;
+}
+  

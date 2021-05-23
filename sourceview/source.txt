@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devise-width, initial-scale=1">
+    
+        <title>Home | petersell.dev</title>
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    
+      </head>
+    
+      <body>
+    
+        <!--Header-------------------------------------->
+
+        <header id="header">
+            <div id="logo">
+                <a href="#">
+                    <img id="logoid" src="img/logo.png" alt="LOGO">
+                </a>
+            </div>
+    
+            <nav id="main-nav">
+                <ul>
+                    <a href="#home"><li class="hover">Home</li></a>
+                    <a href="#projects"><li class="hover">Projects</li></a>
+                    <a href="#socials"><li class="hover">Socials</li></a>
+                    <li> | </li>
+                    <a href="twitter" target="_blank"><li class="hover">Twitter</li></a>
+                    <a href="github" target="_blank"><li class="hover">GitHub</li></a>
+                    <a href="discord" target="_blank"><li class="hover">Discord</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Home-------------------------------------->
+
+        <section scrollbar id="home">
+            <hr>
+            <h1 id="johann">petersell.dev</h1>
+            <a href="#projects" id="arrow"><img src="img/arrow.png" alt="Pfeil"></a>
+        </section>
+
+        <!--Projects-------------------------------------->
+        
+        <section scrollbar id="projects">
+            <hr>
+            <h3>Projects</h3>
+
+            <div id="work">
+                <ul>
+                    <!--CordSaver-------------------------------------->
+                    <li>
+                        <a href="cordsaver" target="_blank">
+                            <div class="container">
+                                <div class="center">CordSaver</div>
+                                <img src="img/cords.png" class="workimg">
+                                <div class="color"></div>
+                                <img src="img/java.png" class="topleftimg">
+                                <div class="topleft">Java</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--ProcessSatelliteImages------------------------->
+                    <li>
+                        <a href="processsatelliteimages" target="_blank">
+                            <div class="container">
+                                <div class="center" id="center1">Process Satellite Images With CV2</div>
+                                <img src="img/cloudgreen.png" class="workimg">
+                                <div class="color" id="color1"></div>
+                                <img src="img/python.png" class="topleftimg" id="topleftimg1">
+                                <div class="topleft">Python</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--Nothing here----------------------------------->
+                    <li>
+                        <a href="#">
+                            <div class="container">
+                                <div class="center">Nothing here</div>
+                                <img src="img/blank.png" class="workimg">
+                                <div class="color" id="color2"></div>
+                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">Nothing here</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--Nothing here----------------------------------->
+                    <li>
+                        <a href="#">
+                            <div class="container">
+                                <div class="center">Nothing here</div>
+                                <img src="img/blank.png" class="workimg">
+                                <div class="color" id="color2"></div>
+                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">Nothing here</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--Nothing here----------------------------------->
+                    <li>
+                        <a href="#">
+                            <div class="container">
+                                <div class="center">Nothing here</div>
+                                <img src="img/blank.png" class="workimg">
+                                <div class="color" id="color2"></div>
+                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">Nothing here</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--Nothing here----------------------------------->
+                    <li>
+                        <a href="#">
+                            <div class="container">
+                                <div class="center">Nothing here</div>
+                                <img src="img/blank.png" class="workimg">
+                                <div class="color" id="color2"></div>
+                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">Nothing here</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--Nothing here----------------------------------->
+                    <li>
+                        <a href="#">
+                            <div class="container">
+                                <div class="center">Nothing here</div>
+                                <img src="img/blank.png" class="workimg">
+                                <div class="color" id="color2"></div>
+                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">Nothing here</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--Nothing here----------------------------------->
+                    <li>
+                        <a href="#">
+                            <div class="container">
+                                <div class="center">Nothing here</div>
+                                <img src="img/blank.png" class="workimg">
+                                <div class="color" id="color2"></div>
+                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">Nothing here</div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--Nothing here----------------------------------->
+                    <li>
+                        <a href="#">
+                            <div class="container">
+                                <div class="center">Nothing here</div>
+                                <img src="img/blank.png" class="workimg">
+                                <div class="color" id="color2"></div>
+                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">Nothing here</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Socials-------------------------------------->
+
+        <section scrollbar id="socials">
+            <div class="twitter" id="social">
+                <a href="twitter" target="_blank"><img src="img/twitter.png" class="logo"></a>
+            </div>
+            <div class="discord" id="social">
+                <a href="github" target="_blank"><img src="img/github.png" class="logo"></a>
+            </div>
+            <div class="github" id="social">
+                <a href="discord" target="_blank"><img src="img/discord.png" class="logo"></a>
+            </div>
+        </section>
+
+        <!--Footer-------------------------------------->
+
+        <footer scrollbar id="footer">
+            <a href="twitter" target="_blank"><p class="left">Twitter</p></a>
+            <a href="github" target="_blank"><p class="left">GitHub</p></a>
+            <a href="discord" target="_blank"><p class="left">Discord</p></a>
+            <a href="impressum" target="_blank"><p class="right">Impressum</p></a>
+            <a href="mailto:contact@petersell.dev" target="_blank"><p class="right">Contact</p></a>
+            <a href="#" target="_blank"><p class="right">       </p></a>
+            <p class="copy">&copy; 2021 - All Rights Reserved</p>
+        </footer>
+
+        <!--Menu---------------------------------------->
+
+        <div id="context-menu">
+            <a href="twitter" target="_blank"><div class="item">Twitter</div></a>
+            <a href="github" target="_blank"><div class="item">GitHub</div></a>
+            <a href="discord" target="_blank"><div class="item">Discord</div></a>
+            <a href="#home"><div class="item">Home</div></a>
+            <a href="#projects"><div class="item">Projects</div></a>
+            <a href="#socials"><div class="item">Socials</div></a>
+            <div class="item" id="debug">--------Debug--------</div>
+            <a href="sourceview/source.txt" target="_blank"><div class="item">Source View HTML</div></a>
+            <a href="js/script.js" target="_blank"><div class="item">Source View JS</div></a>
+            <a href="css/style.css" target="_blank"><div class="item">Source View CSS</div></a>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

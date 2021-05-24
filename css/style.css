@@ -55,7 +55,7 @@ hr {
   margin: 0 auto 40px auto;
 }
 
-#logo, #social, .color, li, img, .button,  header nav ul ul a, .topleft {
+#logo, #github, #discord, #twitter, #social, .color, li, img, .button,  header nav ul ul a, .topleft {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -103,6 +103,7 @@ header nav ul li {
 
 .hover:hover {
   padding-top: 5px;
+  color: #f0f0f0;
 }
 
 header nav ul li ul {
@@ -154,7 +155,6 @@ header nav ul li ul {
 #projects {
   background-color: #151b20;
 }
-
 
 #work {
   width: 1000px;
@@ -355,6 +355,18 @@ footer p {
   margin-right: 200px;
 }
 
+#twitter:hover {
+  color: #1DA1F2;
+}
+
+#github:hover {
+  color: #333;
+}
+
+#discord:hover {
+  color: #7289da;
+}
+
 /*-Menu----------------------------------------------------*/
 
 #context-menu {
@@ -364,6 +376,7 @@ footer p {
   background: #1b1a1a;
   border-radius: 5px;
   text-align: left;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #context-menu .item {
@@ -375,12 +388,23 @@ footer p {
 }
 
 #context-menu .item:hover {
-  background: #343434;
+  /*background: #343434;*/
+  background: #eee;
+  color: #343434;
   border-radius: 5px;
 }
 
-#debug:hover {
-  background: #1b1a1a;
+#context-menu #twittera:hover {
+  color: #1DA1F2;
+}
+
+#context-menu #githuba:hover {
+  color: #333;
+  background: #eee;
+}
+
+#context-menu #discorda:hover {
+  color: #7289da;
 }
 
 #context-menu {

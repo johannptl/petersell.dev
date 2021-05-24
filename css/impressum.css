@@ -151,18 +151,16 @@ footer p {
 /*-Menu----------------------------------------------------*/
 
 #context-menu {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
     position: fixed;
     z-index: 10000;
     width: 150px;
     background: #1b1a1a;
     border-radius: 5px;
     text-align: left;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
   
-  #context-menu .item {
+#context-menu .item {
     padding: 8px 10px;
     font-size: 15px;
     color: #eee;
@@ -170,16 +168,27 @@ footer p {
     border-radius: inherit;
 }
   
-  #context-menu .item:hover {
-    background: #343434;
+#context-menu .item:hover {
+    /*background: #343434;*/
+    background: #eee;
+    color: #343434;
     border-radius: 5px;
 }
   
-  #debug:hover {
-    background: #1b1a1a;
+#context-menu #twittera:hover {
+    color: #1DA1F2;
 }
   
-  #context-menu {
+#context-menu #githuba:hover {
+    color: #333;
+    background: #eee;
+}
+  
+#context-menu #discorda:hover {
+    color: #7289da;
+}
+  
+#context-menu {
     position: fixed;
     z-index: 10000;
     width: 150px;
@@ -188,7 +197,7 @@ footer p {
     display: none;
 }
   
-  #context-menu.visible {
+#context-menu.visible {
     display: block;
 }
   

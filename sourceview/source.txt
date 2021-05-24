@@ -32,9 +32,11 @@
                     <a href="#projects"><li class="hover">Projects</li></a>
                     <a href="#socials"><li class="hover">Socials</li></a>
                     <li> | </li>
-                    <a href="twitter" target="_blank"><li class="hover">Twitter</li></a>
-                    <a href="github" target="_blank"><li class="hover">GitHub</li></a>
-                    <a href="discord" target="_blank"><li class="hover">Discord</li></a>
+                    <a href="twitter" target="_blank"><li class="hover" id="twitter">Twitter</li></a>
+                    <a href="github" target="_blank"><li class="hover" id="github">GitHub</li></a>
+                    <a href="discord" target="_blank"><li class="hover" id="discord">Discord</li></a>
+                    <li> | </li>
+                    <a href="source" target="_blank"><li class="hover sourcegithub" id="github">Source Code</li></a>
                 </ul>
             </nav>
         </header>
@@ -184,28 +186,32 @@
         <!--Footer-------------------------------------->
 
         <footer scrollbar id="footer">
-            <a href="twitter" target="_blank"><p class="left">Twitter</p></a>
-            <a href="github" target="_blank"><p class="left">GitHub</p></a>
-            <a href="discord" target="_blank"><p class="left">Discord</p></a>
+            <a href="twitter" target="_blank"><p id="twitter" class="left">Twitter</p></a>
+            <a href="github" target="_blank"><p id="github" class="left">GitHub</p></a>
+            <a href="discord" target="_blank"><p id="discord" class="left">Discord</p></a>
             <a href="impressum" target="_blank"><p class="right">Impressum</p></a>
             <a href="mailto:contact@petersell.dev" target="_blank"><p class="right">Contact</p></a>
-            <a href="#" target="_blank"><p class="right">       </p></a>
-            <p class="copy">&copy; 2021 - All Rights Reserved</p>
+            <a href="source" target="_blank"><p id="github" class="right">Source Code</p></a>
+            <p class="copy" target="_blank">&copy; 2021 - All Rights Reserved</p>
         </footer>
 
         <!--Menu---------------------------------------->
 
         <div id="context-menu">
-            <a href="twitter" target="_blank"><div class="item">Twitter</div></a>
-            <a href="github" target="_blank"><div class="item">GitHub</div></a>
-            <a href="discord" target="_blank"><div class="item">Discord</div></a>
+            <div class="item" id="debug">----Navigation----</div>
             <a href="#home"><div class="item">Home</div></a>
             <a href="#projects"><div class="item">Projects</div></a>
             <a href="#socials"><div class="item">Socials</div></a>
+            <div class="item" id="debug">-------Socials-------</div>
+            <a href="twitter" target="_blank"><div class="item">Twitter</div></a>
+            <a href="github" target="_blank"><div class="item">GitHub</div></a>
+            <a href="discord" target="_blank"><div class="item">Discord</div></a>
             <div class="item" id="debug">--------Debug--------</div>
             <a href="sourceview/source.txt" target="_blank"><div class="item">Source View HTML</div></a>
             <a href="js/script.js" target="_blank"><div class="item">Source View JS</div></a>
             <a href="css/style.css" target="_blank"><div class="item">Source View CSS</div></a>
+            <div class="item" id="debug">--------Secial--------</div>
+            <a href="source" target="_blank"><div class="item">Source Code</div></a>
         </div>
 
         <script src="js/script.js"></script>

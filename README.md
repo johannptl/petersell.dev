@@ -6,4 +6,3 @@ Soucre Code for [petersell.dev](https://petersell.dev) Website
 [GitHub](https://github.com/JohannLULW/)  
 [Discord](https://discord.gg/zhdbzgTD)  
 [petersell.dev](https://petersell.dev)  
-  

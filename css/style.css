@@ -68,7 +68,7 @@ hr {
   margin: 0 auto 40px auto;
 }
 
-#logo, #github, #discord, #twitter, #social, .page1, .page2, .page3, .pagetext, .color, li, img, .button, .hover, .topleft {
+#logo, #github, #discord, #twitter, #social, #home p, .page1, .page2, .page3, .pagetext, .color, li, img, .button, .hover, .topleft {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -191,7 +191,7 @@ header nav li {
   background-attachment: fixed;
 }
 
-#home p, #home h1 {
+#home h1 {
   margin: 240px auto 0 auto;
   font-size: 110px;
 }
@@ -207,13 +207,23 @@ header nav li {
   opacity: 1;
 }
 
+#home p {
+  animation: load 3s;
+  float: right;
+  margin-right: 20px;
+  color: rgb(207, 207, 207);
+  border: 1px solid rgb(207, 207, 207);
+  padding: 10px;
+}
+
+#home p:hover {
+  color: #000;
+  background: rgb(207, 207, 207);
+}
+
 #johann {
-  /*-webkit-animation: typing 2s steps(13, end);,
-    blink-caret .5s step-end infinite alternate;*/
-    /*border-right: 2px solid rgba(255,255,255,.75);*/
   font-family: 'Lato', sans-serif;
   overflow: hidden;
-  /*font: bold 300% Consolas, Monaco, monospace;*/
   padding-top: 4px;
   color: #000;
   text-shadow:
@@ -465,6 +475,7 @@ footer {
 }
 
 footer p {
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: #f0f0f0;
   padding-top: 21px;

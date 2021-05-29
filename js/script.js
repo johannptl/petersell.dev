@@ -45,6 +45,7 @@ function showHeader() {
     document.getElementById("header").style.background = headercolor;
     document.getElementById("logoid").style.width = "100%";
     document.getElementById("arrow").style.display = "none";
+    document.getElementById("again").style.display = "none";
     document.getElementById("src").style.color = "rgb(172, 172, 172)";
     document.getElementById("header").style.boxShadow = "0 1px 3px rgba(0, 0, 0, 0.3)";
 }

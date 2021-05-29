@@ -28,6 +28,7 @@
         </div>
 
         <!--Scrollbar----------------------------------->
+        <div id="site">
 
         <div class="scrollbar">
             <a href="#home"><div class="page1" id="page1"><p class="pagetext centerxy">Home</p></div></a><br>
@@ -38,33 +39,34 @@
         
         <!--Header-------------------------------------->
         
-        <div id="site">
-            <header id="header">
-                <div id="logo" class="absolute">
-                    <a href="#">
-                        <img id="logoid" class="left" src="img/logo.png" alt="LOGO">
-                    </a>
+        <header id="header">
+            <div id="logo" class="absolute">
+                <a href="#">
+                    <img id="logoid" class="left" src="img/logo.png" alt="LOGO">
+                </a>
+            </div>
+            
+            <nav class="mainnav" id="main-nav">
+                <div class="centerxy absolute">
+                    <a href="#home"><li class="hover left marginright50px">Home</li></a>
+                    <a href="#projects"><li class="hover left marginright50px">Projects</li></a>
+                    <a href="#socials"><li class="hover left marginright50px">Socials</li></a>
+                    <a href="#team"><li class="hover left">Team</li></a>
                 </div>
-                
-                <nav class="mainnav" id="main-nav">
-                    <div class="centerxy absolute">
-                        <a href="#home"><li class="hover left marginright50px">Home</li></a>
-                        <a href="#projects"><li class="hover left marginright50px">Projects</li></a>
-                        <a href="#socials"><li class="hover left marginright50px">Socials</li></a>
-                        <a href="#team"><li class="hover left">Team</li></a>
-                    </div>
-                    <a href="source" target="_blank"><li id="src" class="src right color000 marginright50px">Source Code</li></a>
-                </nav>
-            </header>
-            
-            <!--Home-------------------------------------->
-            
-            <section scrollbar id="home">
-                <hr>
-                <h1 id="johann">petersell.dev</h1>
-                <a href="#projects" id="arrow"><img src="img/arrow.png" alt="Pfeil"></a>
-            </section>
-            
+                <a href="source" target="_blank"><li id="src" class="src right color000 marginright50px">Source Code</li></a>
+            </nav>
+        </header>
+        
+        <!--Home-------------------------------------->
+        
+        <section scrollbar id="home">
+            <hr>
+            <h1 id="johann">petersell.dev</h1>
+            <a href="#projects" id="arrow"><img src="img/arrow.png" alt="Pfeil"></a>
+            <div onclick="intro()"" id="again"><p>Play Intro again</p>
+            </div>
+        </section>
+        
         <!--Projects-------------------------------------->
         
         <section scrollbar id="projects">
@@ -267,10 +269,9 @@
             <a href="github" target="_blank"></a><div class="item" id="githuba">GitHub</div></a>
             <a href="discord" target="_blank"><div class="item" id="discorda">Discord</div></a>
             <div class="item line" id="debug">--------Debug--------</div>
-            <a href="sourceview/source.txt" target="_blank"><div class="item">Source View HTML</div></a>
             <a href="js/script.js" target="_blank"><div class="item">Source View JS</div></a>
             <a href="css/style.css" target="_blank"><div class="item">Source View CSS</div></a>
-            <div class="item line" id="debug">--------Secial--------</div>
+            <div class="item line" id="debug">--------Special--------</div>
             <a href="source" target="_blank"><div class="item">Source Code</div></a>
         </div>
         

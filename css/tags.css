@@ -1,0 +1,50 @@
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.centerxy {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centerx {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.centery {
+    position: relative;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.margintop10px {
+    margin-top: 10px;
+}
+
+.marginright50px {
+    margin-right: 50px;
+}
+
+.colorfff {
+    color: #fff;
+}
+
+.color000 {
+    color: #000;
+}

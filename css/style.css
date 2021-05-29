@@ -1,5 +1,10 @@
-/*--FONT-------------------------------------*/
-
+/*--FONT IMPORT------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nova+Round&display=swap');
 
 /*--MAIN-------------------------------------*/
 html, body {
@@ -8,8 +13,16 @@ html, body {
   height: 100%;
   text-align: center;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
+/*
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+*/
 section {
   min-height: 100%;
 }
@@ -32,9 +45,9 @@ h1, h3, a, li, div {
   text-transform: uppercase;
 }
 
-p, h4 {
-  font-family: 'public sans';
-  color: #91aec1;
+p {
+  font-family: 'Lato', sans-serif;
+  color: rgb(172, 172, 172);
 }
 
 h1, h3 {
@@ -55,23 +68,71 @@ hr {
   margin: 0 auto 40px auto;
 }
 
-#logo, #github, #discord, #twitter, #social, .color, li, img, .button,  header nav ul ul a, .topleft {
+#logo, #github, #discord, #twitter, #social, .page1, .page2, .page3, .pagetext, .color, li, img, .button, .hover, .topleft {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
 }
 
+/*-Intro-----------------------------------------------------*/
+
+#intro {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  text-align: center;
+}
+
+#intropage1, #intropage2 {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  opacity: 0;
+  transition: 3s opacity;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--Scrollbar------------------------------------------------*/
+
+.scrollbar {
+  position: fixed;
+  top: 35%;
+}
+
+.page1, .page2, .page3, .page4 {
+  height: 40px;
+  width: 100px;
+  margin-left: 20px;
+  border-left: 1px solid rgb(82, 82, 82);
+}
+
+.page1:hover, .page2:hover, .page3:hover, .page4:hover {
+  border-color: rgb(172, 172, 172);
+}
+
+.pagetext {
+  opacity: 0;
+}
+
+.page1:hover .pagetext, .page2:hover .pagetext, .page3:hover .pagetext, .page4:hover .pagetext {
+  opacity: 1;
+}
+
 /*-Header----------------------------------------------------*/
 
-Header {
+header {
+  transition: 0.2s background;
   width: 100%;
   height: 65px;
   position: fixed;
   top: 0;
   left: 0;
   background: none;
-  z-index: 1
+  z-index: 1;
+  animation: load 3s;
 }
 
 #logo {
@@ -89,35 +150,42 @@ Header {
   border-radius: 10px;
 }
 
-header nav {
-  float: right;
-  margin: 10px 50px 0 0;
+
+header nav .left {
+  float: left;
   display: inline-block;
   font-size: 20px
 }
 
-header nav ul li {
-  float: left;
+header nav .right {
+  float: right;
+  display: inline-block;
+  font-size: 20px
+}
+
+
+header nav li {
+  font-family: 'Lato', sans-serif;
+  color: rgb(172, 172, 172);
   margin-left: 25px;
 }
 
 .hover:hover {
-  padding-top: 5px;
-  color: #f0f0f0;
+  border-bottom: 1px solid rgb(172, 172, 172);
 }
 
-header nav ul li ul {
-  overflow: hidden;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+.src {
+  margin-top: 1%;
+}
+
+.src:hover {
+  border-bottom: 1px solid #000;
 }
 
 /*-Home----------------------------------------------------*/
 
 #home {
-  background: url(../img/landing.png);
+  background: url(../img/5.png);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -132,6 +200,7 @@ header nav ul li ul {
   width: 32px;
   margin-top: 450px;
   opacity: 0.7;
+  animation: load 3s;
 }
 
 #home img:hover {
@@ -139,16 +208,30 @@ header nav ul li ul {
 }
 
 #johann {
-  font: bold 300% Consolas, Monaco, monospace;
-  border-right: 2px solid rgba(255,255,255,.75);
-  /*border-right: .08em solid #898f93;*/
-  width: 16.5em;
-  width: 13ch;
-  margin: 2em 1em;
-  white-space: nowrap;
+  /*-webkit-animation: typing 2s steps(13, end);,
+    blink-caret .5s step-end infinite alternate;*/
+    /*border-right: 2px solid rgba(255,255,255,.75);*/
+  font-family: 'Lato', sans-serif;
   overflow: hidden;
-  -webkit-animation: typing 2s steps(13, end),
-    blink-caret .5s step-end infinite alternate;
+  /*font: bold 300% Consolas, Monaco, monospace;*/
+  padding-top: 4px;
+  color: #000;
+  text-shadow:
+  -1px -1px 0 rgb(172, 172, 172),
+  1px -1px 0 rgb(172, 172, 172),
+  -1px 1px 0 rgb(172, 172, 172),
+  1px 1px 0 rgb(172, 172, 172); 
+  animation: load 3s;
+  text-transform: lowercase;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*-projects----------------------------------------------------*/
 
@@ -258,15 +341,17 @@ header nav ul li ul {
 
 #color1 {
   width: 125px;
-  height: 50px;
 }
 
 #color2 {
   width: 180px;
-  height: 50px;
 }
 
-.center {
+#color3 {
+  width: 103px;
+}
+
+.centerwork {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -329,15 +414,54 @@ header nav ul li ul {
   width: 60%;
 }
 
+/*-Team------------------------------------------------------*/
+
+#team {
+  height: 1080px;
+  margin: 0;
+  padding: 0;
+}
+
+#team div {
+  float: left;
+  height: 50%;
+  width: 50%;
+  background: #151b20;
+}
+
+.name, #team div h1{
+  margin-top: 50px;
+}
+
+#team div img {
+  border-radius: 1000px;
+  width: 17%;
+}
+
+#team div a p {
+  margin-top: 10px;
+  color: #1DA1F2;
+  margin-bottom: 0;
+}
+
+.whyeotm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+
+.cuzeotm {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
 /*-Footer----------------------------------------------------*/
 
 footer {
   width: 100%;
   height: 50px;
   background-color: #3f3f3f;
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  bottom: 0;
 }
 
 footer p {
@@ -346,19 +470,15 @@ footer p {
   padding-top: 21px;
   margin-top: 0;
   text-transform: none;
-  text-align: center;
 }
 
-.left {
-  float: left;
+.left200px {
   margin-left: 200px;
 }
 
-.right {
-  float: right;
+.right200px {
   margin-right: 200px;
 }
-
 
 #twitter:hover {
   color: #1DA1F2;
@@ -371,17 +491,16 @@ footer p {
 #discord:hover {
   color: #7289da;
 }
-
 /*-Menu----------------------------------------------------*/
-
 #context-menu {
+  border: 3px soiled #fff;
   position: fixed;
   z-index: 10000;
   width: 150px;
   background: #1b1a1a;
   border-radius: 5px;
+  display: none;
   text-align: left;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #context-menu .item {
@@ -392,11 +511,17 @@ footer p {
   border-radius: inherit;
 }
 
+
 #context-menu .item:hover {
   /*background: #343434;*/
   background: #eee;
   color: #343434;
   border-radius: 5px;
+}
+
+#context-menu .line:hover {
+  background: #1b1a1a;
+  color: #eee;
 }
 
 #context-menu #twittera:hover {
@@ -412,14 +537,6 @@ footer p {
   color: #7289da;
 }
 
-#context-menu {
-  position: fixed;
-  z-index: 10000;
-  width: 150px;
-  background: #1b1a1a;
-  border-radius: 5px;
-  display: none;
-}
 
 #context-menu.visible {
   display: block;

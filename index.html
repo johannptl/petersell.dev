@@ -2,66 +2,82 @@
 <html lang="en" id="html">
     <head>
 
+        <!--Meta-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=devise-width, initial-scale=1">
-    
-        <title>Home | petersell.dev</title>
-    
+        
+        <!--CSS Import-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/tags.css">
+        
+        <!--Fuvicon Import-->
         <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-    
+        
+        <!--Title-->
+        <title>Home | petersell.dev</title>
+
       </head>
     
       <body>
-    
+
+        <!--Intro-------------------------------------->
+
+        <div id="intro">
+            <h1 id="intropage1">we like to introduce</h1>
+            <h1 id="intropage2">A new design of petersell.dev</h1>
+        </div>
+
+        <!--Scrollbar----------------------------------->
+
+        <div class="scrollbar">
+            <a href="#home"><div class="page1" id="page1"><p class="pagetext centerxy">Home</p></div></a><br>
+            <a href="#projects"><div class="page2" id="page2"><p class="pagetext centerxy">Projects</p></div></a><br>
+            <a href="#socials"><div class="page3" id="page3"><p class="pagetext centerxy">Socials</p></div></a><br>
+            <a href="#team"><div class="page4" id="page4"><p class="pagetext centerxy">Team</p></div></a><br>
+        </div>
+        
         <!--Header-------------------------------------->
-
-        <header id="header">
-            <div id="logo">
-                <a href="#">
-                    <img id="logoid" src="img/logo.png" alt="LOGO">
-                </a>
-            </div>
-    
-            <nav id="main-nav">
-                <ul>
-                    <a href="#home"><li class="hover">Home</li></a>
-                    <a href="#projects"><li class="hover">Projects</li></a>
-                    <a href="#socials"><li class="hover">Socials</li></a>
-                    <li> | </li>
-                    <a href="twitter" target="_blank"><li class="hover" id="twitter">Twitter</li></a>
-                    <a href="github" target="_blank"><li class="hover" id="github">GitHub</li></a>
-                    <a href="discord" target="_blank"><li class="hover" id="discord">Discord</li></a>
-                    <li> | </li>
-                    <a href="source" target="_blank"><li class="hover sourcegithub" id="github">Source Code</li></a>
-                </ul>
-            </nav>
-        </header>
-
-        <!--Home-------------------------------------->
-
-        <section scrollbar id="home">
-            <hr>
-            <h1 id="johann">petersell.dev</h1>
-            <a href="#projects" id="arrow"><img src="img/arrow.png" alt="Pfeil"></a>
-        </section>
-
+        
+        <div id="site">
+            <header id="header">
+                <div id="logo" class="absolute">
+                    <a href="#">
+                        <img id="logoid" class="left" src="img/logo.png" alt="LOGO">
+                    </a>
+                </div>
+                
+                <nav class="mainnav" id="main-nav">
+                    <div class="centerxy absolute">
+                        <a href="#home"><li class="hover left marginright50px">Home</li></a>
+                        <a href="#projects"><li class="hover left marginright50px">Projects</li></a>
+                        <a href="#socials"><li class="hover left marginright50px">Socials</li></a>
+                        <a href="#team"><li class="hover left">Team</li></a>
+                    </div>
+                    <a href="source" target="_blank"><li id="src" class="src right color000 marginright50px">Source Code</li></a>
+                </nav>
+            </header>
+            
+            <!--Home-------------------------------------->
+            
+            <section scrollbar id="home">
+                <hr>
+                <h1 id="johann">petersell.dev</h1>
+                <a href="#projects" id="arrow"><img src="img/arrow.png" alt="Pfeil"></a>
+            </section>
+            
         <!--Projects-------------------------------------->
         
         <section scrollbar id="projects">
             <hr>
             <h3>Projects</h3>
-
+            
             <div id="work">
                 <ul>
                     <!--CordSaver-------------------------------------->
                     <li>
                         <a href="cordsaver" target="_blank">
                             <div class="container">
-                                <div class="center">CordSaver</div>
+                                <div class="centerwork">CordSaver</div>
                                 <img src="img/cords.png" class="workimg">
                                 <div class="color"></div>
                                 <img src="img/java.png" class="topleftimg">
@@ -73,7 +89,7 @@
                     <li>
                         <a href="processsatelliteimages" target="_blank">
                             <div class="container">
-                                <div class="center" id="center1">Process Satellite Images With CV2</div>
+                                <div class="centerwork" id="centerwork1">Process Satellite Images With CV2</div>
                                 <img src="img/cloudgreen.png" class="workimg">
                                 <div class="color" id="color1"></div>
                                 <img src="img/python.png" class="topleftimg" id="topleftimg1">
@@ -81,11 +97,23 @@
                             </div>
                         </a>
                     </li>
+                    <!--petersell.dev---------------------------------->
+                    <li>
+                        <a href="source">
+                            <div class="container">
+                                <div class="centerwork">petersell.dev</div>
+                                <img src="img/5.png" class="workimg">
+                                <div class="color" id="color3"></div>
+                                <img src="img/html.png" class="topleftimg" id="topleftimg2">
+                                <div class="topleft">HTML</div>
+                            </div>
+                        </a>
+                    </li>
                     <!--Nothing here----------------------------------->
                     <li>
                         <a href="#">
                             <div class="container">
-                                <div class="center">Nothing here</div>
+                                <div class="centerwork">Nothing here</div>
                                 <img src="img/blank.png" class="workimg">
                                 <div class="color" id="color2"></div>
                                 <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
@@ -97,7 +125,7 @@
                     <li>
                         <a href="#">
                             <div class="container">
-                                <div class="center">Nothing here</div>
+                                <div class="centerwork">Nothing here</div>
                                 <img src="img/blank.png" class="workimg">
                                 <div class="color" id="color2"></div>
                                 <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
@@ -109,7 +137,7 @@
                     <li>
                         <a href="#">
                             <div class="container">
-                                <div class="center">Nothing here</div>
+                                <div class="centerwork">Nothing here</div>
                                 <img src="img/blank.png" class="workimg">
                                 <div class="color" id="color2"></div>
                                 <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
@@ -121,7 +149,7 @@
                     <li>
                         <a href="#">
                             <div class="container">
-                                <div class="center">Nothing here</div>
+                                <div class="centerwork">Nothing here</div>
                                 <img src="img/blank.png" class="workimg">
                                 <div class="color" id="color2"></div>
                                 <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
@@ -133,7 +161,7 @@
                     <li>
                         <a href="#">
                             <div class="container">
-                                <div class="center">Nothing here</div>
+                                <div class="centerwork">Nothing here</div>
                                 <img src="img/blank.png" class="workimg">
                                 <div class="color" id="color2"></div>
                                 <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
@@ -145,19 +173,7 @@
                     <li>
                         <a href="#">
                             <div class="container">
-                                <div class="center">Nothing here</div>
-                                <img src="img/blank.png" class="workimg">
-                                <div class="color" id="color2"></div>
-                                <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
-                                <div class="topleft">Nothing here</div>
-                            </div>
-                        </a>
-                    </li>
-                    <!--Nothing here----------------------------------->
-                    <li>
-                        <a href="#">
-                            <div class="container">
-                                <div class="center">Nothing here</div>
+                                <div class="centerwork">Nothing here</div>
                                 <img src="img/blank.png" class="workimg">
                                 <div class="color" id="color2"></div>
                                 <img src="img/nothing.png" class="topleftimg" id="topleftimg2">
@@ -168,9 +184,9 @@
                 </ul>
             </div>
         </section>
-
+        
         <!--Socials-------------------------------------->
-
+        
         <section scrollbar id="socials">
             <div class="twitter" id="social">
                 <a href="twitter" target="_blank"><img src="img/twitter.png" class="logo"></a>
@@ -183,37 +199,82 @@
             </div>
         </section>
 
+        <!--Team---------------------------------------->
+
+        <section id="team">
+            <div class="ceo">
+                <h1>CEO</h1>
+                <img src="img/johann.jpg">
+                <p>johann petersell</p>
+                <a href="twitter"><p>@420johann</p></a>
+                <p class="whyeotm">Best CEO in the whole Universe.</p>
+            </div>
+            <div class="technic">
+                <h1>technic</h1>
+                <img src="img/johann.jpg">
+                <p>johann petersell</p>
+                <a href="twitter"><p>@420johann</p></a>
+                <p class="whyeotmdd">Skills:</p>
+                <p class="cuzeotm">- java script / node / electron</p>
+                <p class="cuzeotm">- HTML / CSS / JS</p>
+                <p class="cuzeotm">- C++ / C#</p>
+                <p class="cuzeotm">- Python</p>
+                <p class="cuzeotm">- Java</p>
+            </div>
+            <br>
+            <div class="management">
+                <h1>management</h1>
+                <img src="img/johann.jpg">
+                <p>johann petersell</p>
+                <a href="twitter"><p>@420johann</p></a>
+                <p class="whyeotm">Skills:</p>
+                <p class="cuzeotm">- Marketing</p>
+                <p class="cuzeotm">- Design</p>
+                <p class="cuzeotm">- Ads</p>
+            </div>
+            <div class="eotm">
+                <h1>employee of the month</h1>
+                <img src="img/johann.jpg">
+                <p class="name">johann petersell</p>
+                <a href="twitter"><p>@420johann</p></a>
+                <p class="whyeotm">Why is Johann Petersell the employee of the year?</p>
+                <p class="cuzeotm">- He worked on weekends</p>
+                <p class="cuzeotm">- He overstayed</p>
+            </div>
+        </section>
+        
         <!--Footer-------------------------------------->
-
-        <footer scrollbar id="footer">
-            <a href="twitter" target="_blank"><p id="twitter" class="left">Twitter</p></a>
-            <a href="github" target="_blank"><p id="github" class="left">GitHub</p></a>
-            <a href="discord" target="_blank"><p id="discord" class="left">Discord</p></a>
-            <a href="impressum" target="_blank"><p class="right">Impressum</p></a>
-            <a href="mailto:contact@petersell.dev" target="_blank"><p class="right">Contact</p></a>
-            <a href="source" target="_blank"><p id="github" class="right">Source Code</p></a>
-            <p class="copy" target="_blank">&copy; 2021 - All Rights Reserved</p>
+        
+        <footer id="footer">
+            <a href="twitter" target="_blank"><p class="left left200px">Twitter</p></a>
+            <a href="github.com" target="_blank"><p class="left left200px">GitHub</p></a>
+            <a href="discord" target="_blank"><p class="left left200px">Discord</p></a>
+            <a href="impressum" target="_blank"><p class="right right200px">Impressum</p></a>
+            <a href="mailto:contact@petersell.dev" target="_blank"><p class="right right200px">Contact</p></a>
+            <a href="source" target="_blank"><p class="right right200px">Source Code</p></a>
+            <p class="copy" class="centertext">&copy; 2021</p>
         </footer>
-
+        
         <!--Menu---------------------------------------->
-
+        
         <div id="context-menu">
-            <div class="item" id="debug">----Navigation----</div>
+            <div class="item line" id="debug">----Navigation----</div>
             <a href="#home"><div class="item">Home</div></a>
             <a href="#projects"><div class="item">Projects</div></a>
             <a href="#socials"><div class="item">Socials</div></a>
-            <div class="item" id="debug">-------Socials-------</div>
+            <div class="item line" id="debug">-------Socials-------</div>
             <a href="twitter" target="_blank"><div class="item" id="twittera">Twitter</div></a>
             <a href="github" target="_blank"></a><div class="item" id="githuba">GitHub</div></a>
             <a href="discord" target="_blank"><div class="item" id="discorda">Discord</div></a>
-            <div class="item" id="debug">--------Debug--------</div>
+            <div class="item line" id="debug">--------Debug--------</div>
             <a href="sourceview/source.txt" target="_blank"><div class="item">Source View HTML</div></a>
             <a href="js/script.js" target="_blank"><div class="item">Source View JS</div></a>
             <a href="css/style.css" target="_blank"><div class="item">Source View CSS</div></a>
-            <div class="item" id="debug">--------Secial--------</div>
+            <div class="item line" id="debug">--------Secial--------</div>
             <a href="source" target="_blank"><div class="item">Source Code</div></a>
         </div>
-
+        
+        </div>
         <script src="js/script.js"></script>
     </body>
-</html>
+    </html>

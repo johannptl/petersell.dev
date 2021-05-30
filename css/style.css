@@ -17,12 +17,11 @@ html, body {
   scrollbar-width: none;
 }
 
-/*
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
-*/
+
 section {
   min-height: 100%;
 }

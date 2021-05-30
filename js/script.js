@@ -113,6 +113,7 @@ function intro() {
     document.getElementById("intro").style.transition = "3s opacity";
     document.getElementById("site").style.display = "none";
     document.getElementById("intro").style.display = "inline";
+    document.getElementById("intropage1").style.display = "inline";
     document.getElementById("html").style.background = "#000";
     document.getElementById('intropage2').style.opacity = '0';
     window.setTimeout(fadein1, 0500);

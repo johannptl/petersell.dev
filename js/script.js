@@ -45,7 +45,6 @@ function showHeader() {
     document.getElementById("header").style.background = headercolor;
     document.getElementById("logoid").style.width = "100%";
     document.getElementById("arrow").style.display = "none";
-    document.getElementById("again").style.display = "none";
     document.getElementById("src").style.color = "rgb(172, 172, 172)";
     document.getElementById("header").style.boxShadow = "0 1px 3px rgba(0, 0, 0, 0.3)";
 }
@@ -86,27 +85,19 @@ scope.addEventListener("click", (e) => {
     contextMenu.classList.remove("visible");
 });
 
-/*--Scrollbar---------------------------------------------------------*
-
-var page1 = document.getElementById("page1").style;
-var page2 = document.getElementById("page2").style;
-var page3 = document.getElementById("page3").style;
-
-var home = document.getElementById("home");
-var projects = document.getElementById("projects");
-var socials = document.getElementById("socials");
-
 /*--Intro-------------------------------------------------------------*/
 
+
+
 window.onload = function() {
-    var watched = getCookie("watched");
-    if (watched == "true") {
+    /*var watched = getCookie("watched");
+    if (watched == "true") {*/
         document.getElementById("intro").style.display = "none";
         document.getElementById("site").style.display = "inline";
-    } else {
+    /*} else {
         setCookie("watched", "true", 30);
         intro()
-    }
+    }*/
 }
 
 function intro() {

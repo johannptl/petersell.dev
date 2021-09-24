@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BigMac Calculator</title>
+    </head>
+    <body>
+        <div style="float: left; margin-right: 50px;">
+            <p>Lenght</p>
+            <input type="text" id="intlenght">
+            <select id="unit1lenght">
+                <option>----Bigtric----</option>
+                <option value="bybm">ybm (Yokto)</option>
+                <option value="bzbm">zbm (Zepto)</option>
+                <option value="babm">abm (Atto)</option>
+                <option value="bfbm">fbm (Femto)</option>
+                <option value="bpbm">pbm (Piko)</option>
+                <option value="bnbm">nbm (Nano)</option>
+                <option value="bμbm">μbm (Mikro)</option>
+                <option value="bμbm">mbm (Milli)</option>
+                <option value="bcbm">cbm (Zenti)</option>
+                <option value="bdbm">dbm (Dezi)</option>
+                <option value="bbm" selected>bm ( - )</option>
+                <option value="bdabm">dabm (Deka)</option>
+                <option value="bhbm">hbm (Hekto)</option>
+                <option value="bkbm">kbm (Kilo)</option>
+                <option value="bMbm">Mbm (Mega)</option>
+                <option value="bGbm">Gbm (Giga)</option>
+                <option value="bTbm">Tbm (Tera)</option>
+                <option value="bPbm">Pbm (Peta)</option>
+                <option value="bEbm">Ebm (Exa)</option>
+                <option value="bZbm">Zbm (Zetta)</option>
+                <option value="bYbm">Ybm (Yotta)</option>
+                <option>----Metric----</option>
+                <option value="mym">ym (Yokto)</option>
+                <option value="mzm">zm (Zepto)</option>
+                <option value="mam">am (Atto)</option>
+                <option value="mfm">fm (Femto)</option>
+                <option value="mpm">pm (Piko)</option>
+                <option value="mnm">nm (Nano)</option>
+                <option value="mμm">μm (Mikro)</option>
+                <option value="mmm">mm (Milli)</option>
+                <option value="mcm">cm (Zenti)</option>
+                <option value="mdm">dm (Dezi)</option>
+                <option value="mm">m ( - )</option>
+                <option value="mdam">dam (Deka)</option>
+                <option value="mhm">hm (Hekto)</option>
+                <option value="km">km (Kilo)</option>
+                <option value="mMm">Mm (Mega)</option>
+                <option value="mGm">Gm (Giga)</option>
+                <option value="mTm">Tm (Tera)</option>
+                <option value="mPm">Pm (Peta)</option>
+                <option value="mEm">Em (Exa)</option>
+                <option value="mZm">Zm (Zetta)</option>
+                <option value="mYm">Ym (Yotta)</option>
+            </select>
+            <p>to</p>
+            <select id="unit2lenght">
+                <option>----Bigtric----</option>
+                <option value="bybm">ybm (Yokto)</option>
+                <option value="bzbm">zbm (Zepto)</option>
+                <option value="babm">abm (Atto)</option>
+                <option value="bfbm">fbm (Femto)</option>
+                <option value="bpbm">pbm (Piko)</option>
+                <option value="bnbm">nbm (Nano)</option>
+                <option value="bμbm">μbm (Mikro)</option>
+                <option value="bμbm">mbm (Milli)</option>
+                <option value="bcbm">cbm (Zenti)</option>
+                <option value="bdbm">dbm (Dezi)</option>
+                <option value="bbm">bm ( - )</option>
+                <option value="bdabm">dabm (Deka)</option>
+                <option value="bhbm">hbm (Hekto)</option>
+                <option value="bkbm">kbm (Kilo)</option>
+                <option value="bMbm">Mbm (Mega)</option>
+                <option value="bGbm">Gbm (Giga)</option>
+                <option value="bTbm">Tbm (Tera)</option>
+                <option value="bPbm">Pbm (Peta)</option>
+                <option value="bEbm">Ebm (Exa)</option>
+                <option value="bZbm">Zbm (Zetta)</option>
+                <option value="bYbm">Ybm (Yotta)</option>
+                <option>----Metric----</option>
+                <option value="mym">ym (Yokto)</option>
+                <option value="mzm">zm (Zepto)</option>
+                <option value="mam">am (Atto)</option>
+                <option value="mfm">fm (Femto)</option>
+                <option value="mpm">pm (Piko)</option>
+                <option value="mnm">nm (Nano)</option>
+                <option value="mμm">μm (Mikro)</option>
+                <option value="mmm">mm (Milli)</option>
+                <option value="mcm">cm (Zenti)</option>
+                <option value="mdm">dm (Dezi)</option>
+                <option value="mm" selected>m ( - )</option>
+                <option value="mdam">dam (Deka)</option>
+                <option value="mhm">hm (Hekto)</option>
+                <option value="mkm">km (Kilo)</option>
+                <option value="mMm">Mm (Mega)</option>
+                <option value="mGm">Gm (Giga)</option>
+                <option value="mTm">Tm (Tera)</option>
+                <option value="mPm">Pm (Peta)</option>
+                <option value="mEm">Em (Exa)</option>
+                <option value="mZm">Zm (Zetta)</option>
+                <option value="mYm">Ym (Yotta)</option>
+            </select>
+            <br>
+            <br>
+            <button onclick="calclenght()">submit</button>
+            <p id="resultlenght"></p>
+        </div>
+
+        <div style="float: left; margin-right: 50px;">
+            <p>Mass</p>
+            <input type="text" id="intmass">
+            <select id="unit1mass">
+                <option>----Bigtric----</option>
+                <option value="bybm">ybm (Yokto)</option>
+                <option value="bzbm">zbm (Zepto)</option>
+                <option value="babm">abm (Atto)</option>
+                <option value="bfbm">fbm (Femto)</option>
+                <option value="bpbm">pbm (Piko)</option>
+                <option value="bnbm">nbm (Nano)</option>
+                <option value="bμbm">μbm (Mikro)</option>
+                <option value="bμbm">mbm (Milli)</option>
+                <option value="bcbm">cbm (Zenti)</option>
+                <option value="bdbm">dbm (Dezi)</option>
+                <option value="bbm" selected>bm ( - )</option>
+                <option value="bdabm">dabm (Deka)</option>
+                <option value="bhbm">hbm (Hekto)</option>
+                <option value="bkbm">kbm (Kilo)</option>
+                <option value="bMbm">Mbm (Mega)</option>
+                <option value="bGbm">Gbm (Giga)</option>
+                <option value="bTbm">Tbm (Tera)</option>
+                <option value="bPbm">Pbm (Peta)</option>
+                <option value="bEbm">Ebm (Exa)</option>
+                <option value="bZbm">Zbm (Zetta)</option>
+                <option value="bYbm">Ybm (Yotta)</option>
+                <option>----Metric----</option>
+                <option value="myg">yg (Yokto)</option>
+                <option value="mzg">zg (Zepto)</option>
+                <option value="mag">ag (Atto)</option>
+                <option value="mfg">fg (Femto)</option>
+                <option value="mpg">pg (Piko)</option>
+                <option value="mng">ng (Nano)</option>
+                <option value="mμg">μg (Mikro)</option>
+                <option value="mmg">mg (Milli)</option>
+                <option value="mcg">cg (Zenti)</option>
+                <option value="mdg">dg (Dezi)</option>
+                <option value="mg">g ( - )</option>
+                <option value="mdag">dag (Deka)</option>
+                <option value="mhg">hg (Hekto)</option>
+                <option value="kg">kg (Kilo)</option>
+                <option value="mMg">Mg (Mega)</option>
+                <option value="mGg">Gg (Giga)</option>
+                <option value="mTg">Tg (Tera)</option>
+                <option value="mPg">Pg (Peta)</option>
+                <option value="mEg">Eg (Exa)</option>
+                <option value="mZg">Zg (Zetta)</option>
+                <option value="mYg">Yg (Yotta)</option>
+            </select>
+            <p>to</p>
+            <select id="unit2mass">
+                <option>----Bigtric----</option>
+                <option value="bybm">ybm (Yokto)</option>
+                <option value="bzbm">zbm (Zepto)</option>
+                <option value="babm">abm (Atto)</option>
+                <option value="bfbm">fbm (Femto)</option>
+                <option value="bpbm">pbm (Piko)</option>
+                <option value="bnbm">nbm (Nano)</option>
+                <option value="bμbm">μbm (Mikro)</option>
+                <option value="bμbm">mbm (Milli)</option>
+                <option value="bcbm">cbm (Zenti)</option>
+                <option value="bdbm">dbm (Dezi)</option>
+                <option value="bbm">bm ( - )</option>
+                <option value="bdabm">dabm (Deka)</option>
+                <option value="bhbm">hbm (Hekto)</option>
+                <option value="bkbm">kbm (Kilo)</option>
+                <option value="bMbm">Mbm (Mega)</option>
+                <option value="bGbm">Gbm (Giga)</option>
+                <option value="bTbm">Tbm (Tera)</option>
+                <option value="bPbm">Pbm (Peta)</option>
+                <option value="bEbm">Ebm (Exa)</option>
+                <option value="bZbm">Zbm (Zetta)</option>
+                <option value="bYbm">Ybm (Yotta)</option>
+                <option>----Metric----</option>
+                <option value="myg">yg (Yokto)</option>
+                <option value="mzg">zg (Zepto)</option>
+                <option value="mag">ag (Atto)</option>
+                <option value="mfg">fg (Femto)</option>
+                <option value="mpg">pg (Piko)</option>
+                <option value="mng">ng (Nano)</option>
+                <option value="mμg">μg (Mikro)</option>
+                <option value="mmg">mg (Milli)</option>
+                <option value="mcg">cg (Zenti)</option>
+                <option value="mdg">dg (Dezi)</option>
+                <option value="mg" selected>g ( - )</option>
+                <option value="mdag">dag (Deka)</option>
+                <option value="mhg">hg (Hekto)</option>
+                <option value="mkg">kg (Kilo)</option>
+                <option value="mMg">Mg (Mega)</option>
+                <option value="mGg">Gg (Giga)</option>
+                <option value="mTg">Tg (Tera)</option>
+                <option value="mPg">Pg (Peta)</option>
+                <option value="mEg">Eg (Exa)</option>
+                <option value="mZg">Zg (Zetta)</option>
+                <option value="mYg">Yg (Yotta)</option>
+            </select>
+            <br>
+            <br>
+            <button onclick="calcmass()">submit</button>
+            <p id="resultmass"></p>
+        </div>
+
+        <script>
+
+            const Yotta  = 1000000000000000000000000
+            const Zetta  = 1000000000000000000000
+            const Exa    = 1000000000000000000
+            const Peta   = 1000000000000000
+            const Tera   = 1000000000000
+            const Giga   = 1000000000
+            const Mega   = 1000000
+            const Kilo   = 1000
+            const Hekto  = 100
+            const Deka   = 10
+            const Normal = 1
+            const Dezi   = 0.1
+            const Zenti  = 0.01
+            const Milli  = 0.001
+            const Mikro  = 0.000001
+            const Nano   = 0.000000001
+            const Piko   = 0.000000000001
+            const Femto  = 0.000000000000001
+            const Atto   = 0.000000000000000001
+            const Zepto  = 0.000000000000000000001
+            const Yokto  = 0.000000000000000000000001
+            
+            /*--Lenght---------------------------------------------------------*/
+
+            function calclenght() {
+
+                var resultlenght = document.getElementById('resultlenght')
+                var unit1lenght = document.getElementById('unit1lenght');
+                var unit2lenght = document.getElementById('unit2lenght');
+                var intlenght = document.getElementById('intlenght');
+
+                var unit1lenght = unit1lenght.options[unit1lenght.selectedIndex].value;
+                var unit2lenght = unit2lenght.options[unit2lenght.selectedIndex].value;
+                var intlenght = intlenght.value;
+                
+                resultlenght.innerHTML = calculatelenght(unit1lenght, unit2lenght, intlenght) + unit2lenght.slice(1);
+            }
+
+            function calculatelenght(unit1lenght, unit2lenght, intlenght) {
+                if (unit1lenght.charAt(0) == 'b' && unit2lenght.charAt(0) == 'm') {
+
+                    unit1lenght = unit1lenght.slice(1);
+                    unit2lenght = unit2lenght.slice(1);
+
+                    return ((intlenght * val(unit1lenght)) / 10) / val(unit2lenght)
+
+                } else if (unit1lenght.charAt(0) == 'm' && unit2lenght.charAt(0) == 'b') {
+
+                    unit1lenght = unit1lenght.slice(1);
+                    unit2lenght = unit2lenght.slice(1);
+
+                    return ((intlenght * val(unit1lenght)) * 10) * val(unit2lenght)
+
+                } else if (unit1lenght.charAt(0) == 'm' && unit2lenght.charAt(0) == 'm') {
+
+                    unit1lenght = unit1lenght.slice(1);
+                    unit2lenght = unit2lenght.slice(1);
+
+                    return ((intlenght * val(unit1lenght)) * val(unit2lenght))
+
+                } else if (unit1lenght.charAt(0) == 'b' && unit2lenght.charAt(0) == 'b') {
+
+                unit1lenght = unit1lenght.slice(1);
+                unit2lenght = unit2lenght.slice(1);
+
+                return ((intlenght * val(unit1lenght)) * val(unit2lenght))
+
+                }
+            }
+
+            /*--Mass-----------------------------------------------------------*/
+
+            function calcmass() {
+
+                var resultmass = document.getElementById('resultmass');
+                var unit1mass = document.getElementById('unit1mass');
+                var unit2mass = document.getElementById('unit2mass');
+                var intmass = document.getElementById('intmass');
+
+                var unit1mass = unit1mass.options[unit1mass.selectedIndex].value;
+                var unit2mass = unit2mass.options[unit2mass.selectedIndex].value;
+                var intmass = intmass.value;
+
+                resultmass.innerHTML = calculatemass(unit1mass, unit2mass, intmass) + unit2mass.slice(1);
+
+            }
+
+            function calculatemass(unit1mass, unit2mass, intmass) {
+                if (unit1mass.charAt(0) == 'b' && unit2mass.charAt(0) == 'm') {
+
+                    unit1mass = unit1mass.slice(1);
+                    unit2mass = unit2mass.slice(1);
+
+                    return (intmass * val(unit1mass) * 45) / val(unit2mass)
+
+                } else if (unit1mass.charAt(0) == 'm' && unit2mass.charAt(0) == 'b') {
+
+                    unit1mass = unit1mass.slice(1);
+                    unit2mass = unit2mass.slice(1);
+
+                    return ((intmass * val(unit1mass)) / 45) / val(unit2mass)
+
+                } else if (unit1mass.charAt(0) == 'm' && unit2mass.charAt(0) == 'm') {
+
+                    unit1mass = unit1mass.slice(1);
+                    unit2mass = unit2mass.slice(1);
+
+                    return ((intmass * val(unit1mass)) * val(unit2mass))
+
+                } if (unit1mass.charAt(0) == 'b' && unit2mass.charAt(0) == 'b') {
+
+                    unit1mass = unit1mass.slice(1);
+                    unit2mass = unit2mass.slice(1);
+
+                    return ((intmass * val(unit1mass)) * val(unit2mass))
+
+                    }
+                }
+
+            /*--Unit-----------------------------------------------------------*/
+
+            function unit(unit) {
+                if (unit == Yotta) {
+                    return 'Y'
+                } else if (unit == Zetta) {
+                    return 'Z'
+                } else if (unit == Exa) {
+                    return 'E'
+                } else if (unit == Peta) {
+                    return 'P'
+                } else if (unit == Tera) {
+                    return 'T'
+                } else if (unit == Giga) {
+                    return 'G'
+                } else if (unit ==  Mega) {
+                    return 'M'
+                } else if (unit == Kilo) {
+                    return 'k'
+                } else if (unit == Hekto) {
+                    return 'h'
+                } else if (unit == Deka) {
+                    return 'da'
+                } else if (unit == Normal) {
+                    return ''
+                } else if (unit == Dezi) {
+                    return 'd'
+                } else if (unit == Zenti) {
+                    return 'c'
+                } else if (unit == Milli) {
+                    return 'm'
+                } else if (unit == Mikro) {
+                    return 'μ'
+                } else if (unit == Nano) {
+                    return 'n'
+                } else if (unit == Piko) {
+                    return 'p'
+                } else if (unit == Femto) {
+                    return 'f'
+                } else if (unit == Atto) {
+                    return 'a'
+                } else if (unit == Zepto) {
+                    return 'z'
+                } else if (unit == Yokto) {
+                    return 'y'
+                }
+            }
+
+            function val(val) {
+
+                if (val == 'ybm' || val == 'ym' || val ==  'yg') {
+                    return Yokto
+                } else if (val == 'zbm' || val ==  'zm' || val ==  'zg') {
+                    return Zepto
+                } else if (val == 'abm' || val ==  'am' || val ==  'ag') {
+                    return Atto
+                } else if (val == 'fbm' || val ==  'fm' || val ==  'fg') {
+                    return Femto
+                } else if (val == 'pbm' || val ==  'pm' || val ==  'pg') {
+                    return Piko
+                } else if (val == 'nbm' || val ==  'nm' || val ==  'ng') {
+                    return Nano
+                } else if (val == 'μbm' || val ==  'μm' || val ==  'μg') {
+                    return Mikro
+                } else if (val == 'mbm' || val ==  'mm' || val ==  'ng') {
+                    return Milli
+                } else if (val == 'cbm' || val ==  'cm' || val ==  'cg') {
+                    return Zenti
+                } else if (val == 'dbm' || val ==  'dm' || val ==  'dg') {
+                    return Dezi
+                } else if (val == 'bm' || val == 'm' || val ==  'g') {
+                    return Normal
+                } else if (val == 'dabm' || val ==  'dam' || val ==  'dag') {
+                    return Deka
+                } else if (val == 'hbm' || val ==  'hm' || val ==  'hg') {
+                    return Hekto
+                } else if (val == 'kbm' || val ==  'km' || val ==  'kg') {
+                    return Kilo
+                } else if (val == 'Mbm' || val ==  'Mm' || val ==  'Mg') {
+                    return Mega
+                } else if (val == 'Gbm' || val ==  'Gm' || val ==  'Gg') {
+                    return Giga
+                } else if (val == 'Tbm' || val ==  'Tm' || val ==  'Tg') {
+                    return Tera
+                } else if (val == 'Pbm' || val ==  'Pm' || val ==  'Pg') {
+                    return Peta
+                } else if (val == 'Ebm' || val ==  'Em' || val ==  'Eg') {
+                    return Exa
+                } else if (val == 'Zbm' || val ==  'Zm' || val ==  'Zg') {
+                    return Zetta
+                } else if (val == 'Ybm' || val ==  'Ym' || val ==  'Yg') {
+                    return Yotta
+                }
+            }
+
+        </script>
+    </body>
+</html>

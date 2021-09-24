@@ -169,16 +169,12 @@ header nav li {
   margin-left: 25px;
 }
 
-.hover:hover {
+.hover:hover, .src:hover {
   border-bottom: 1px solid rgb(172, 172, 172);
 }
 
 .src {
-  margin-top: 1%;
-}
-
-.src:hover {
-  border-bottom: 1px solid #000;
+  margin-top: 1.55vh;
 }
 
 /*-Home----------------------------------------------------*/
@@ -236,8 +232,8 @@ header nav li {
 
 #work {
   width: 1000px;
-  margin: 0 auto 0 auto;
-  margin-left: 500px;
+  margin: auto;
+  padding-left: 7vh;
 }
 
 #work ul {
@@ -373,26 +369,26 @@ header nav li {
   text-align: left;
   margin: 0;
   padding: 0;
-  height: 1080px;
+  height: 100vh;
 }
 
 .twitter {
   width: 33.333%;
-  height: 1080px;
+  height: 100vh;
   float: left;
   background: #1DA1F2;
 }
 
 .discord {
   width: 33.333%;
-  height: 1080px;
+  height: 100vh;
   float: left;
   background: #333;
 }
 
 .github {
   width: 33.333%;
-  height: 1080px;
+  height: 100vh;
   float: left;
   background: #7289da;
 }
@@ -409,83 +405,49 @@ header nav li {
   width: 60%;
 }
 
-/*-Team------------------------------------------------------*/
-
-#team {
-  height: 1080px;
-  margin: 0;
-  padding: 0;
-}
-
-#team div {
-  float: left;
-  height: 50%;
-  width: 50%;
-  background: #151b20;
-}
-
-.name, #team div h1{
-  margin-top: 50px;
-}
-
-#team div img {
-  border-radius: 1000px;
-  width: 17%;
-}
-
-#team div a p {
-  margin-top: 10px;
-  color: #1DA1F2;
-  margin-bottom: 0;
-}
-
-.whyeotm {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-transform: none;
-}
-
-.cuzeotm {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-transform: none;
-}
-
 /*-Footer----------------------------------------------------*/
 
 footer {
   width: 100%;
-  height: 50px;
+  height: 5vh;
   background-color: #3f3f3f;
 }
 
-footer p {
+.footerItems1, .footerItems2 {
+  display: inline-block;
+  position: absolute;
+}
+
+.footercontent {
+  padding-top: 2vh;
+}
+
+.footerItems1 {
+  left: 0;
+}
+
+.footerItems2 {
+  right: 0;
+}
+
+.copyright {
+  position: absolute;
+}
+
+.footerContentItemsRight {
+  margin-right: 19vh;
+}
+
+.footerContentItemsLeft {
+  margin-left: 19vh;
+}
+
+footer p, footer span {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: #f0f0f0;
-  padding-top: 21px;
   margin-top: 0;
   text-transform: none;
-}
-
-.left200px {
-  margin-left: 200px;
-}
-
-.right200px {
-  margin-right: 200px;
-}
-
-#twitter:hover {
-  color: #1DA1F2;
-}
-
-#github:hover {
-  color: #333;
-}
-
-#discord:hover {
-  color: #7289da;
 }
 /*-Menu----------------------------------------------------*/
 #context-menu {

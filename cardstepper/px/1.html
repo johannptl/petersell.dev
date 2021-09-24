@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+        
+        <title>Document</title>
+
+    </head>
+    <body>
+        <div id="window">
+            <div id="wrapper">
+                <div>
+                    <center>
+                        <div class="progressbar">
+                            <div class="progress1" id="progress1"></div>
+                            <div class="progress2" id="progress2"></div>
+                            <div class="progress3" id="progress3"></div>
+                            <div class="progress4" id="progress4"></div>
+                            <div class="progress5" id="progress5"></div>
+                            <div class="progress6" id="progress6"></div>
+                        </div>
+                    </center>
+                    <div class="topleftbox"></div>
+
+                    <div class="topmainbox" style="border-color: #0d1117"></div>
+
+                    <div class="toprightbox"></div>
+                </div>
+                <div> 
+                    <div class="leftbox" style="border-color: #0d1117" id="left" onclick="left()"></div>
+
+                    <div class="mainbox" id="display1" style="display: inline;">
+                        <div class="title">
+                            <h1>HTML</h1>
+                            <p>HYPER-TEXT MARKUP LANGUAGE
+                                Is the standardised markup language that 
+                                defines the layout of a webpage. </p>
+                        </div>
+                        <center>
+                            <div id="prerequisitebox" class="prerequisite">
+                                <h3>Prerequisite</h3>
+                                <p class="prerequisite_p1" id="prerequisite_p1">-VS Code</p>
+                                <p class="prerequisite_p2" id="prerequisite_p2">-Firefox</p>
+                            </div>
+                        </center>
+                        <div class="content">
+                            <p>HYPER-TEXT MARKUP LANGUAGE
+                                Is the standardised markup language (a subset of XML) that 
+                                defines the layout of a webpage. 
+                                HTML has no functional properties, other languages such as 
+                                JavaScript must be used in order to manipulate the layout
+                                and perform HTTP requests.
+                                CSS (Cascading Style Sheets) is commonly used to style the
+                                elements in the layout.</p>
+                            <center>
+                                <img src="../img/html.png" alt="HTML">
+                            </center>
+                        </div>
+                    </div>
+                    <div class="mainbox" id="display2" style="display: none;">
+                        <div class="title">
+                            <h1>Random text</h1>
+                            <p>He my polite be object oh change. Consider no mr am overcame yourself</p>
+                        </div>
+                        <center>
+                            <div id="prerequisitebox" class="prerequisite">
+                                <h3>Prerequisite</h3>
+                                <p class="prerequisite_p1" id="prerequisite_p1">-VS Code</p>
+                                <p class="prerequisite_p2" id="prerequisite_p2">-Firefox</p>
+                            </div>
+                        </center>
+                        <div class="content">
+                            <p>He my polite be object oh change. Consider no mr am overcame yourself
+                                throwing sociable children. Hastily her totally conduct may.
+                                My solid by stuff first smile fanny. Humoured how advanced mrs
+                                elegance sir who. Home sons when them dine do want to. Estimating
+                                themselves unsatiable imprudence an he at an. Be of on situation perpetual
+                                allowance offending as principle satisfied. Improved carriage securing are
+                                desirous too.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mainbox" id="display3" style="display: none;">
+                        <div class="title">
+                            <h1>Node.js</h1>
+                            <p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment.</p>
+                        </div>
+                        <center>
+                            <div id="prerequisitebox" class="prerequisite">
+                                <h3>Prerequisite</h3>
+                                <p class="prerequisite_p1" id="prerequisite_p1">-VS Code</p>
+                                <p class="prerequisite_p2" id="prerequisite_p2">-Firefox</p>
+                            </div>
+                        </center>
+                        <div class="text">
+                            <p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment
+                                that runs on the V8 engine and executes JavaScript code outside a web browser.
+                                Node.js lets developers use JavaScript to write command line tools and for
+                                server-side scripting—running scripts server-side to produce dynamic web
+                                page content before the page is sent to the user's web browser. Consequently,
+                                Node.js represents a "JavaScript everywhere" paradigm, unifying web-application
+                                development around a single programming language, rather than different languages
+                                for server-side and client-side scripts.
+                            </p>
+                        </div>
+                        <center>
+                            <div class="force" id="force1"><div class="forceleft" onclick="falseforce1()"></div><div class="forceright" onclick="trueforce1()"></div>Install Node</div>
+                            <div class="force" id="force2"><div class="forceleft" onclick="falseforce2()"></div><div class="forceright" onclick="trueforce2()"></div>Install Package X</div>
+                            <div class="force" id="force3"><div class="forceleft" onclick="falseforce3()"></div><div class="forceright" onclick="trueforce3()"></div>Install Package Y</div>
+                            <div class="force" id="force4"><div class="forceleft" onclick="falseforce4()"></div><div class="forceright" onclick="trueforce4()"></div>Install Package Z</div>
+                        </center>
+                    </div>
+                    <div class="mainbox" id="display4" style="display: none;">
+                        <div class="title">
+                            <h1>CSS</h1>
+                            <p>Cascading Style Sheets</p>
+                        </div>
+                        <center>
+                            <div class="option1" onclick="option1()">
+                                <h2>CSS in the "style" tag.</h2>
+                            </div>
+                            <div class="option2" onclick="option2()">
+                                <h2>CSS in the .css file.</h2>
+                            </div>
+                            <div class="content">
+                            <p>Cascading Style Sheets (englische Aussprache [kæsˌkeɪdɪŋˈstaɪlʃiːts];
+                                für gestufte Gestaltungsbögen; kurz: CSS) ist eine Stylesheet-Sprache
+                                für elektronische Dokumente und zusammen mit HTML und JavaScript eine
+                                der Kernsprachen des World Wide Webs.
+                            </p>
+                            <img src="../img/css.png" alt="CSS" class="css">
+                            </div>
+                        </center>
+                    </div>
+                    <div class="mainbox" id="csstag" style="display: none;">
+                        <div class="title">
+                            <h1>CSS in "style" tag</h1>
+                            <p>CSS stands for Cascading Style Sheets.</p>
+                        </div>
+                        <div class="content">
+                            <p>CSS stands for Cascading Style Sheets. It is the most common way to
+                            style an HTML element.
+                            CSS Defines how an HTML element will appear on your web browser, such as making
+                            your text green, or a shadow effect behind your button!
+                            There are three ways to add CSS to your code:
+                            -Inline CSS is directly written into the element you would like styled.
+                            -Scripted CSS is also written in HTML, but using the "style" tag.
+                            -Stylesheet / External CSS is on its own document and does not require any
+                            HTML inside it. To bind it to your webpage, use the "link" element.</p>
+                            <!--<script src="https://gist.github.com/JohannLULW/b618ad7bc61ae20e8fccba56ab7f1df2.js"></script>-->
+                        </div>
+                    </div>
+                    <div class="mainbox" id="end1" style="display: none;">
+                        <div class="title">
+                            <h1>end card for option 1</h1>
+                            <p>He my polite be object oh change. Consider no mr am overcame yourself</p>
+                        </div>
+                        <div class="content">
+                            <p>Excited him now natural saw passage offices you minuter. 
+                                At by asked being court hopes. Farther so friends am to detract. 
+                                Forbade concern do private be. Offending residence but men engrossed shy. 
+                                Pretend am earnest offered arrived company so on. Felicity informed yet 
+                                had admitted strictly how you.</p>
+                        </div>
+                    </div>
+                    <div class="mainbox" id="cssfile" style="display: none;">
+                        <div class="title">
+                            <h1>CSS in .css file</h1>
+                            <p>CSS stands for Cascading Style Sheets.</p>
+                        </div>
+                        <div class="content">
+                            <p>CSS stands for Cascading Style Sheets. It is the most common way to
+                            style an HTML element.
+                            CSS Defines how an HTML element will appear on your web browser, such as making
+                            your text green, or a shadow effect behind your button!
+                            There are three ways to add CSS to your code:
+                            -Inline CSS is directly written into the element you would like styled.
+                            -Scripted CSS is also written in HTML, but using the "style" tag.
+                            -Stylesheet / External CSS is on its own document and does not require any
+                            HTML inside it. To bind it to your webpage, use the "link" element.</p>
+                            <!--<script src="https://gist.github.com/JohannLULW/3ae5b0db0021192d35204e044bfd6cad.js"></script>-->
+                        </div>
+                    </div>
+                    <div class="mainbox" id="end2" style="display: none;">
+                        <div class="title">
+                            <h1>end card for option 2</h1>
+                            <p>He my polite be object oh change. Consider no mr am overcame yourself</p>
+                        </div>
+                        <div class="content">
+                            <p>Excited him now natural saw passage offices you minuter. 
+                                At by asked being court hopes. Farther so friends am to detract. 
+                                Forbade concern do private be. Offending residence but men engrossed shy. 
+                                Pretend am earnest offered arrived company so on. Felicity informed yet 
+                                had admitted strictly how you.</p>
+                        </div>
+                    </div>
+
+                    <div class="rightbox" onclick="right()" id="right"></div>
+                </div>
+                <div>
+                    <div class="topleftbox"></div>
+
+                    <div class="bottommainbox" style="border-left: 3px solid #0d1117;border-right: 3px solid #0d1117;border-top: 3px solid #0d1117;"></div>
+
+                    <div class="toprightbox"></div>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

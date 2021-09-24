@@ -1,1 +1,8 @@
 ErrorDocument 404 /
+Redirect /twitter https://twitter.com/420johann
+Redirect /github https://github.com/johannlulw
+Redirect /cordsaver https://github.com/JohannLULW/CordSaver
+Redirect /processsatelliteimages https://github.com/JohannLULW/ProcessSatelliteImages
+Redirect /source https://github.com/JohannLULW/petersell.dev
+Redirect /get-datetime https://github.com/JohannLULW/get_time
+Redirect /discord https://discord.gg/KhVMc3yF

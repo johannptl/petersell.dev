@@ -6,7 +6,7 @@
     float: left;
 }
 
-.center {
+.centertext {
     text-align: center;
 }
 
@@ -47,4 +47,8 @@
 
 .color000 {
     color: #000;
+}
+
+.width100p {
+    width: 100%;
 }

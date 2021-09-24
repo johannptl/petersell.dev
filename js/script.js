@@ -45,7 +45,6 @@ function showHeader() {
     document.getElementById("header").style.background = headercolor;
     document.getElementById("logoid").style.width = "100%";
     document.getElementById("arrow").style.display = "none";
-    document.getElementById("src").style.color = "rgb(172, 172, 172)";
     document.getElementById("header").style.boxShadow = "0 1px 3px rgba(0, 0, 0, 0.3)";
 }
 
@@ -53,7 +52,6 @@ function hideHeader() {
     document.getElementById("header").style.background = "none";
     document.getElementById("logoid").style.width = "150%";
     document.getElementById("arrow").style.display = "inline";
-    document.getElementById("src").style.color = "#000";
     document.getElementById("header").style.boxShadow = "0 0 0 rgba(0, 0, 0, 0)";
 }
 
@@ -136,3 +134,10 @@ function intro() {
         document.getElementById("intro").style.display = "none";
     }
 }
+
+/*--URL Parameters----------------------------------------------------*/
+
+const queryString = window.location.search;
+console.log(queryString);
+
+const urlParams = new URLSearchParams(queryString);

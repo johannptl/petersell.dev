@@ -1,3 +1,6 @@
+```OLD PETERSELL.DEV APP```  
+new scr in johannptl/beta.petersell.dev
+
 # petersell.dev
 Soucre Code for [petersell.dev](https://petersell.dev) Website
 
